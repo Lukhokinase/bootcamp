@@ -19,7 +19,7 @@ let number = document.querySelector('.Myimage');
 
 function save(){
     let img = document.querySelector('.file').value;
-    Myimages.push(img);
+    Myimages.push(img)
     console.log(img);
 }
 function nextImage(){

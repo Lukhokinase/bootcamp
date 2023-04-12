@@ -34,3 +34,14 @@ button{
   color: antiquewhite;
  height: 2rem;
 }
+
+.AddBtn{
+  background-color: #df1d1d; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
