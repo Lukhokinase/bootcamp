@@ -36,14 +36,20 @@
 
 // console.log(res);
 
-let person = {
-    fname: "Vuyo",
-    lname: "Dila",
-    shoutOut: ()=>{
-        console.log(person.lname)
-    }
-}
-person.mname ="Jackson"
-console.log(person)
+// let person = {
+//     fname: "Vuyo",
+//     lname: "Dila",
+//     shoutOut: ()=>{
+//         console.log(person.lname)
+//     }
+// }
+// person.mname ="Jackson"
+// console.log(person)
 // person.shoutOut()
+
+function dev () {
+
+
+    
+}
 
