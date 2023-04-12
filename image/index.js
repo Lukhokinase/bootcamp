@@ -16,6 +16,12 @@ let currentImage = 0;
 let number = document.querySelector('.Myimage');
 //number.innerHTML = 1
 //show.src = Myimages[currentImage];
+
+function save(){
+    let img = document.querySelector('.file').value;
+    Myimages.push(img);
+    console.log(img);
+}
 function nextImage(){
     
     currentImage++;
