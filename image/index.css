@@ -1,6 +1,36 @@
-.Myimage{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
+body{
+  padding-top: 6rem;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+
+}
+
+.app{
+
+  display: flex;
+  justify-content: center;
+  margin: auto;
   width: 50%;
+  height: 350px;
+}
+
+.Myimage{
+
+  width: 100%;
+  border: 5px solid rgb(217, 205, 205);
+  height: 100%;
+}
+.btn{
+  padding: 1.5rem;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+button{
+  background-color: red;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: antiquewhite;
+ height: 2rem;
 }
