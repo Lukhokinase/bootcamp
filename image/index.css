@@ -1,3 +1,16 @@
+#AddBtn{
+  background-color: #97ce9e; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
 body{
   padding-top: 6rem;
   background: rgb(2,0,36);
@@ -35,13 +48,3 @@ button{
  height: 2rem;
 }
 
-.AddBtn{
-  background-color: #df1d1d; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}

@@ -10,6 +10,8 @@ let Myimages = [
     "OIP.jpeg"
     
 ];
+
+let arrayImages = JSON.stringify(Myimages)
 //start at the first,, used to incriment
 let currentImage = 0;
 //refresing to show ,, must be equal to zero
@@ -20,6 +22,7 @@ let number = document.querySelector('.Myimage');
 function save(){
     let img = document.querySelector('.file').value;
     Myimages.push(img)
+    localStorage.setItem("Myimage",JSON.stringify(Myimages))
     console.log(img);
 }
 function nextImage(){
