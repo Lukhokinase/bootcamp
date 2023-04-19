@@ -2,16 +2,20 @@
 let show = document.querySelector(".Myimage")
 
 //listing all the pictures
-let Myimages = [
-    "50 cent 1.jpeg",
-    "50 cent 2.jpg",
-    "50 cent 3.jpg",
-    "download1.jpeg",
-    "OIP.jpeg"
+    let Myimages ; if(localStorage.getItem("Myimages")){Myimages = JSON.parse(localStorage.getItem("Myimages"))} else {
+        Myimages = [
+            "50 cent 1.jpeg",
+            "50 cent 2.jpg",
+            "50 cent 3.jpg",
+            "download1.jpeg",
+            "OIP.jpeg"
+            
+        ];
+    }
     
-];
 
-let arrayImages = JSON.stringify(Myimages)
+
+
 //start at the first,, used to incriment
 let currentImage = 0;
 //refresing to show ,, must be equal to zero
@@ -21,10 +25,22 @@ let number = document.querySelector('.Myimage');
 
 function save(){
     let img = document.querySelector('.file').value;
+    // console.log(img in Myimages)
+    let check = Myimages.some(ele => ele == img)
+    if(!img){
+        alert("INSERT PICTURE")
+    } else if(check){
+        alert("This is a duplicate")
+    }else {
     Myimages.push(img)
-    localStorage.setItem("Myimage",JSON.stringify(Myimages))
-    console.log(img);
+    localStorage.setItem("Myimages",JSON.stringify(Myimages))
+    console.log(img);}
+    
 }
+
+
+
+
 function nextImage(){
     
     currentImage++;
@@ -50,3 +66,8 @@ function prevImage(){
     number.src = Myimages[currentImage];
 }
 
+
+function del(){
+    Myimages.splice(currentImage,1)
+    localStorage.setItem("Myimages",JSON.stringify(Myimages))
+}
