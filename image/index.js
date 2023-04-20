@@ -30,7 +30,6 @@ function save(){
     if(!img){
         alert("INSERT PICTURE")
     } else if(check){
-        alert("This is a duplicate")
     }else {
     Myimages.push(img)
     localStorage.setItem("Myimages",JSON.stringify(Myimages))
