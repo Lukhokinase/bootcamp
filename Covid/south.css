@@ -69,5 +69,19 @@ h2{
     margin-left: 550px;
     margin-top: 40px;
   }
-  
+  #god2:hover{
+    background-color: gray;
+
+  }
+  #text1{
+    font-family: arial black;
+    color: gray;
+  }
+  #text1:hover{
+    color: white;
+  }
+  #god1:hover{
+    background-color: gray;
+  }
+
 

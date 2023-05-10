@@ -4,7 +4,7 @@
     
 }
 body{
-    background-color: rgb(162, 238, 178);
+    background-color: rgb(221, 221, 221);
 }
 #deaths{
     color: red;
@@ -68,5 +68,19 @@ h2{
     text-align: center; 
     margin-left: 550px;
     margin-top: 40px;
+  }
+  #god2:hover{
+    background-color: rgb(47, 182, 77);
+
+  }
+  #text1{
+    font-family: arial black;
+    color: rgb(47, 182, 77);
+  }
+  #text1:hover{
+    color: white;
+  }
+  #god1:hover{
+    background-color: rgb(47, 182, 77);
   }
 
